@@ -1,4 +1,4 @@
-import { loadPage } from "./pageLoad.js";
+import { loadPage } from "./home.js";
 import { menu } from "./menu.js";
 
 function component() {
