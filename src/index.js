@@ -1,14 +1,7 @@
-import hero from './hero.jpg';
+import { loadPage } from "./pageLoad.js";
 
 function component() {
-    content = document.getElementById("content");
-
-    const heroImg = new Image();
-    heroImg.src = hero;
-
-    content.appendChild(heroImg);
-
-    return content
+    loadPage();
 }
 
-document.body.appendChild(component())
+component();
