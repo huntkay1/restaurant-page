@@ -1,6 +1,6 @@
 import hero from './hero.jpg';
 
-export function loadPage() {
+export function home() {
     const content = document.getElementById("content");
 
     const heroImg = new Image(500, 300);

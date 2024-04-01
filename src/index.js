@@ -1,8 +1,9 @@
-import { loadPage } from "./home.js";
+import { home } from "./home.js";
 import { menu } from "./menu.js";
+import { about } from "./about.js";
 
 function component() {
-    loadPage();
+    home();
 
     const buttons = [...document.querySelectorAll('button')];
 
@@ -11,8 +12,14 @@ function component() {
     })
 
     function changePage(e) {
-        if (e.target.innerHTML === "Menu") {
+        var bttnName = e.target.innerHTML;
+        
+        if (bttnName === "Menu") {
             menu();
+        } else if (bttnName === "About") {
+            about();
+        } else {
+            home();
         }
     }
 }
